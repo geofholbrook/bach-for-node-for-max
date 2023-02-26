@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "open-patch": "open patches/main.maxpat",
+    "watch": "tsc --watch",
     "test": "jest"
   },
   "author": "",
