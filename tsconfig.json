@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "lib": ["ES2015"],
-      "outDir": "./patches",
-      "downlevelIteration": true,
-      "strict": true,
-      "esModuleInterop": true,
-      "rootDir": "."
-  },
-  "exclude": ["tests/**/*"]
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "lib": ["ES2015"],
+        "outDir": "./patches",
+        "downlevelIteration": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "rootDir": "."
+    },
+    "exclude": ["tests/**/*"]
 }
