@@ -7,7 +7,7 @@
         "open-patch": "open patches/main.maxpat",
         "watch": "tsc --watch",
         "test": "jest",
-        "format-check": "prettier --check .",
+        "format-check": "prettier --check **/*.ts",
         "format": "yarn format-check --write"
     },
     "author": "",

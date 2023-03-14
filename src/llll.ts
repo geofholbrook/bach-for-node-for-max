@@ -1,5 +1,4 @@
-export function generateBachAddChord(pitches: number[]) {
-    const formattedNotes = pitches.map((p) => `[${p} 500 50]`);
-
-    return `addchord [0 ${formattedNotes.join(' ')}]`;
+export function generateBachAddChord(pitches: number[], onset = 0, duration = 500, velocity = 127) {
+    const formattedNotes = pitches.map((p) => `[${p} ${duration} ${velocity}]`);
+    return `addchord [${onset} ${formattedNotes.join(' ')}]`;
 }

@@ -1,5 +1,9 @@
+import _ from 'lodash';
 import { outlet } from 'max-api';
-import { generateBachAddChord } from './src/llll';
+import { addChord } from './src/addChord';
 
 outlet('clear');
-outlet(...generateBachAddChord([6000, 6400, 6700, 7100]).split(' '));
+const pitches = _.shuffle(_.range(6000, 7100, 100));
+pitches.forEach((pitch, i) => {
+    addChord([pitch], i * 250, 100);
+});
