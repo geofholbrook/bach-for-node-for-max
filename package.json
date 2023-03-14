@@ -7,7 +7,8 @@
         "open-patch": "open patches/main.maxpat",
         "watch": "tsc --watch",
         "test": "jest",
-        "format": "prettier --write ."
+        "format-check": "prettier --check .",
+        "format": "yarn format-check --write"
     },
     "author": "",
     "license": "ISC",
@@ -38,7 +39,7 @@
         "printWidth": 120
     },
     "pre-commit": [
-        "format",
+        "format-check",
         "test"
     ]
 }
